@@ -1,0 +1,37 @@
+.font__custome {
+  font-family: "Ador Noirrit";
+}
+@font-face {
+  font-family: "Ador Noirrit";
+  src: url("../../assets/fonts/Ador_noitri/Unicode/Li Ador Noirrit Bold.ttf");
+}
+@font-face {
+  font-family: "Baloo Da";
+  src: url("../../assets/fonts/Baloo_Da/Baloo_Da-Regular.ttf");
+}
+
+.logo__custome {
+  width: 25%;
+}
+
+.dropdown__custome {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate(0px, 10.3226px);
+}
+
+.brand_primary__color {
+  color: #243071;
+  opacity: 0.8;
+}
+.brand_button_bg {
+  background-color: #2e4797;
+  opacity: 0.8;
+}
+.max_w_custome {
+  max-width: 1320px !important;
+}
+.custom_radius {
+  border-radius: 15px;
+}

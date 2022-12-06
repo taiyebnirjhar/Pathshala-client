@@ -1,0 +1,101 @@
+.hero {
+  background: #243071;
+}
+@font-face {
+  font-family: "Baloo Da";
+  src: url("../../assets/fonts/Baloo_Da/Baloo_Da-Regular.ttf");
+}
+@font-face {
+  font-family: "Hind Siliguri";
+  src: url("../../assets/fonts/Hind_Siliguri/Hind_Siliguri_Light-Regular.ttf");
+}
+.balo_da_custome {
+  font-family: "Baloo Da, cursive";
+}
+.max_w_custome {
+  max-width: 1320px !important;
+}
+.bgImg {
+  background-image: linear-gradient(90deg, rgb(35, 48, 113), rgb(35, 48, 113));
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.custome__P {
+  color: #fff;
+  font-family: "Baloo Da";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  opacity: 0.5;
+}
+.custome_H2 {
+  font-family: "Hind Siliguri";
+  font-weight: 600;
+  /* font-size: 56px; */
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero__btn__first {
+  box-shadow: 0 6px 20px rgb(15 29 95 / 40%);
+  display: inline-flex;
+  background: #f0f6f8;
+  border: 2px solid #cf278d;
+  color: #cf278d;
+  max-height: 60px;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Baloo Da";
+  font-weight: 500;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.hero__btn__second {
+  max-height: 60px;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Baloo Da";
+
+  font-weight: 500;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 20px rgb(15 29 95 / 40%);
+  display: inline-flex;
+  background: #cf278d;
+  color: #fff;
+}
+.hero_img_container {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  max-width: 100%;
+}
+.hero_img_container_two {
+  box-sizing: border-box;
+  display: block;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+}

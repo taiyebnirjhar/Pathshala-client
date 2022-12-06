@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.brand_primary__color {
+  color: #243071;
+}
+.brand_primary_bg {
+  background-color: #243071;
+}
+.brand_primary_bg_light {
+  background-color: #2d3979;
+}
+.brand_secondary__bg {
+  background-color: #fb297b;
+}
+.brand_secondary__color {
+  color: #fb297b;
+}
+@font-face {
+  font-family: "Ador Noirrit";
+  src: url("../../src/assets/fonts/Ador_noitri/Unicode/Li Ador Noirrit Regular.ttf");
+}
+@font-face {
+  font-family: "Ador Noirrit Light";
+  src: url("../../src/assets/fonts/Ador_noitri/Unicode/Li Ador Noirrit Light.ttf");
+}
+@font-face {
+  font-family: "Baloo Da";
+  src: url("../../assets/fonts/Baloo_Da/Baloo_Da-Regular.ttf");
+}
+.primary_font {
+  font-family: "Ador Noirrit";
+}
+.secondary_font {
+  font-family: "Baloo Da";
+}
+.primary_font_light {
+  font-family: "Ador Noirrit Light";
+}
+.activeSelect {
+  border-bottom: 4px solid rgb(219 39 119);
+}
+.custome_stiky {
+  position: relative;
+  z-index: 999;
+  transform: translate3d(0px, 0px, 0px);
+}
+.course_details_title {
+  color: #343b6d;
+  text-align: left;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #343b6d;
+  text-align: left;
+}
+.course_details_title_des {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: balo;
+  color: #454c7e;
+  padding-top: 12px;
+}
+
+.active {
+  color: #fb297b;
+  font-size: 5rem;
+}
