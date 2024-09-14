@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import { toast } from "react-toastify";
 import { AuthContext } from "../../contexts/FirebaseContext";
 import "../../styles/index.css";
 import CourseCard from "./CourseCard";
@@ -23,13 +24,41 @@ function CoursePageSection() {
             {/* section header start */}
 
             <div className="flex flex-row gap-8 primary_font_light  justify-end sticky">
-              <div className="text-lg font-semibold brand_primary__color py-3 activeSelect">
+              <div className="text-lg font-semibold brand_primary__color py-3 activeSelect cursor-pointer">
                 সকল কোর্স
               </div>
-              <div className="text-lg font-semibold brand_primary__color py-3 ">
+              <div
+                className="text-lg font-semibold brand_primary__color py-3  cursor-pointer"
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+              >
                 এসএসসি
               </div>
-              <div className="text-lg font-semibold brand_primary__color py-3">
+              <div
+                className="text-lg font-semibold brand_primary__color py-3 cursor-pointer"
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+              >
                 এইচএসসি
               </div>
             </div>

@@ -35,6 +35,67 @@ function Drawer({ navToggle, navToggler, setNavToggler }) {
                 </div>
               </Link>
               <hr className="w-[97%] mx-auto opacity-40" />
+
+              <div
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+                className="block py-2.5 px-4  text-white  hover:text-pink-600"
+                aria-current="page"
+                // onClick={navToggle}
+              >
+                ব্লগ
+              </div>
+              <hr className="w-[97%] mx-auto opacity-40" />
+              <div
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+                className="block py-2.5 px-4  text-white hover:text-pink-600 "
+                aria-current="page"
+                // onClick={navToggle}
+              >
+                জিজ্ঞাসা
+              </div>
+              <hr className="w-[97%] mx-auto opacity-40" />
+              <div
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+                className="block py-2.5 px-4  text-white hover:text-pink-600 "
+                aria-current="page"
+                // onClick={navToggle}
+              >
+                আমাদের সম্পর্কে
+              </div>
+
               {/* <Link to="/pricing">
                 <div
                   href="#"
@@ -45,7 +106,7 @@ function Drawer({ navToggle, navToggler, setNavToggler }) {
                   লার্নিং
                 </div>
               </Link> */}
-              <hr className="w-[97%] mx-auto opacity-40" />
+              {/* <hr className="w-[97%] mx-auto opacity-40" />
               <Link to="/blog">
                 <div
                   href="#"
@@ -75,7 +136,7 @@ function Drawer({ navToggle, navToggler, setNavToggler }) {
                 onClick={navToggle}
               >
                 আমাদের সম্পর্কে
-              </div>
+              </div> */}
               <hr className="w-[97%] mx-auto opacity-40" />
               {!user ? (
                 <Link to={"/login"}>

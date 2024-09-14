@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import logo from "../../../src/assets/images/logo.png";
 import avatar from "../../assets/images/avatar.webp";
 import { AuthContext } from "../../contexts/FirebaseContext";
@@ -197,14 +198,69 @@ function Navbar() {
                   </div>
                 </Link>
               </li>
-
-              <li>
+              {/* <li>
                 <Link to="/blog">
                   <div className="block py-2 pr-4 pl-3 brand_primary__color rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-600 md:p-0 ">
                     ব্লগ
                   </div>
                 </Link>
+              </li> */}
+              <li
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+              >
+                <div className="block py-2 pr-4 pl-3 brand_primary__color rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-600 md:p-0 ">
+                  ব্লগ
+                </div>
               </li>
+
+              <li
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+              >
+                <div className="block py-2 pr-4 pl-3 brand_primary__color rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-600 md:p-0 ">
+                  জিজ্ঞাসা
+                </div>
+              </li>
+              <li
+                onClick={() => {
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
+                }}
+              >
+                <div className="block py-2 pr-4 pl-3 brand_primary__color rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-600 md:p-0 ">
+                  আমাদের সম্পর্কে
+                </div>
+              </li>
+              {/*
               <li>
                 <Link to="/FAQ">
                   <div className="block py-2 pr-4 pl-3 brand_primary__color rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-600 md:p-0 ">
@@ -216,7 +272,7 @@ function Navbar() {
                 <div className="block py-2 pr-4 pl-3 brand_primary__color rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-600 md:p-0 ">
                   আমাদের সম্পর্কে
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
           {/* ul 2xl */}

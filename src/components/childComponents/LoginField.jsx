@@ -151,7 +151,7 @@ function LoginField() {
                             </p>
                             <hr className="border-gray-300" />
                           </div>
-                          <div className="mt-4 flex flex-row justify-center gap-4 2xl:text-2xl md:text-lg  lg:text-xl text-indigo-900 font-bold opacity-90">
+                          <div className="mt-4 flex flex-row justify-center gap-4 text-2xl text-indigo-900 font-bold opacity-90">
                             <div
                               className=" hover:text-pink-600"
                               onClick={() =>

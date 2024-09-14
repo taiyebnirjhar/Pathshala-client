@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_in_apiKey,
-  authDomain: import.meta.env.VITE_in_authDomain,
-  projectId: import.meta.env.VITE_in_projectId,
-  storageBucket: import.meta.env.VITE_in_storageBucket,
-  messagingSenderId: import.meta.env.VITE_in_messagingSenderId,
-  appId: import.meta.env.VITE_in_appId,
+  apiKey: "AIzaSyByJoRfbE8me0k_QGZl_gP2FKz95ARTp2k",
+  authDomain: "pathshala-official.firebaseapp.com",
+  projectId: "pathshala-official",
+  storageBucket: "pathshala-official.appspot.com",
+  messagingSenderId: "808458183841",
+  appId: "1:808458183841:web:24203274c05a8ff9707ce0",
 };
 
 // Initialize Firebase
