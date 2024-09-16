@@ -1,11 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { lazy, Suspense, useContext, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../contexts/FirebaseContext";
 import "../../styles/index.css";
-import CourseCard from "./CourseCard";
 
+import { CourseCardSkeleton } from "./CourseCard";
 import "./CoursePage.css";
+
+const CourseCard = lazy(() => import("./CourseCard"));
 function CoursePageSection() {
   /**********************************/
   const { navToggler } = useContext(AuthContext);
@@ -293,21 +295,24 @@ function CoursePageSection() {
                     লেসনস
                   </h3>
                 </div>
-                <div className="flex flex-wrap xl:justify-between lg:justify-around justify-center gap-4 mt-10">
-                  {courseData.data.map((item) => {
-                    return (
-                      <CourseCard
-                        course={item}
-                        key={item.id}
-                        id={item.id}
-                        title={item.title}
-                        des={item.des}
-                        img={item.imgUrl}
-                        price={item.price}
-                      />
-                    );
-                  })}
-                </div>
+                <Suspense fallback={<CourseCardSkeleton />}>
+                  <div className="flex flex-wrap xl:justify-between lg:justify-around justify-center gap-4 mt-10">
+                    {courseData.data.map((item) => {
+                      return (
+                        <CourseCard
+                          course={item}
+                          key={item.id}
+                          id={item.id}
+                          title={item.title}
+                          des={item.des}
+                          img={item.imgUrl}
+                          price={item.price}
+                        />
+                      );
+                    })}
+                  </div>
+                </Suspense>
+
                 {/*********************************************************************/}
               </div>
             </div>

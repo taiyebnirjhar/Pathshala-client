@@ -153,7 +153,7 @@ function LoginField() {
                           </div>
                           <div className="mt-4 flex flex-row justify-center gap-4 text-2xl text-indigo-900 font-bold opacity-90">
                             <div
-                              className=" hover:text-pink-600"
+                              className=" hover:text-pink-600  cursor-pointer"
                               onClick={() =>
                                 loginWithGoogle()
                                   .then((res) => {
@@ -191,7 +191,7 @@ function LoginField() {
                             {/* github */}
 
                             <div
-                              className="hover:text-pink-600"
+                              className="hover:text-pink-600  cursor-pointer"
                               onClick={() =>
                                 loginWithGithub()
                                   .then((res) => {
@@ -228,7 +228,7 @@ function LoginField() {
                             </div>
                             {/* facebook */}
                             <div
-                              className="hover:text-pink-600"
+                              className="hover:text-pink-600 cursor-pointer"
                               onClick={() =>
                                 loginWithFacebook()
                                   .then((res) => {

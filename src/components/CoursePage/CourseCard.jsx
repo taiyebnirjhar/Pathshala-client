@@ -32,4 +32,36 @@ function CourseCard({ title, des, img, price, id }) {
   );
 }
 
+function CourseCardSkeleton() {
+  return (
+    <div className="flex flex-wrap xl:justify-between lg:justify-around justify-center gap-4 mt-10">
+      {Array(4)
+        .fill(0)
+        .map((_, index) => (
+          <div
+            className="single_course skeleton-card xl:w-[48%] lg:w-[45%] md:w-[60%] sm:w-[65%] w-[95%] animate-pulse"
+            key={index}
+          >
+            {/* Image Skeleton */}
+            <div className="skeleton-image skeleton-loader"></div>
+
+            {/* Content Skeleton */}
+            <div className="py-[20px] px-[24px]">
+              <div className="skeleton-title skeleton-loader"></div>
+              <div className="skeleton-des skeleton-loader"></div>
+            </div>
+
+            {/* Pricing and Button Skeleton */}
+            <div className="single_course_fee_btn">
+              <div className="skeleton-price skeleton-loader"></div>
+              <div className="skeleton-button skeleton-loader"></div>
+            </div>
+          </div>
+        ))}
+    </div>
+  );
+}
+
 export default CourseCard;
+
+export { CourseCardSkeleton };

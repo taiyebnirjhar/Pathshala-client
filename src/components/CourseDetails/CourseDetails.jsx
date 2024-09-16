@@ -51,13 +51,41 @@ function CourseDetails() {
               <div className="py-2 font-medium 2xl:text-xl">{des}</div>
             </div>
             <div className="flex flex-row gap-8 primary_font_light  justify-start sticky">
-              <div className="text-lg font-semibold brand_primary__color py-3 activeSelect">
+              <div className="text-lg font-semibold brand_primary__color py-3 activeSelect cursor-pointer">
                 মেন্টর
               </div>
-              <div className="text-lg font-semibold brand_primary__color py-3 ">
+              <div
+                className="text-lg font-semibold brand_primary__color py-3  cursor-pointer"
+                onClick={() =>
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  })
+                }
+              >
                 সিলেবাস
               </div>
-              <div className="text-lg font-semibold brand_primary__color py-3">
+              <div
+                className="text-lg font-semibold brand_primary__color py-3 cursor-pointer"
+                onClick={() =>
+                  toast.warn("Coming Soon!", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  })
+                }
+              >
                 বিস্তারিত
               </div>
             </div>
@@ -107,7 +135,7 @@ function CourseDetails() {
                       <li className="py-1">
                         - সিলেবাস আগে আগে শেষ করে ক্লাসে-পরীক্ষায় এগিয়ে থাকতে{" "}
                       </li>
-                      <li className="py-2 underline text-blue-800 font-semibold">
+                      <li className="py-2 underline text-blue-800 font-semibold cursor-pointer">
                         আরও পড়তে এখানে ক্লিক করো...{" "}
                       </li>
                     </ul>
